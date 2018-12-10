@@ -1,6 +1,6 @@
 # Jest project stuff
 
-Jest ignores config and attempts to run all JS and JSON files as tests (ignoring the test config in the project folder) when only one project is specified in the `projects` array.
+Jest attempts to run all JS, JSON, and snapshot files as tests (ignoring the test config in the project folder) when only one project is specified in the `projects` array.
 
 Repro:
 
@@ -52,7 +52,7 @@ error Command failed with exit code 1.
 info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
 ```
 
-Interestingly, this project works if you change the `projects` field to also include `packages/b`:
+Interestingly, this project works if you change the `projects` field to also include `packages/b`, even though `packages/b` has no Jest config:
 
 ```diff
 -      "packages/a"
