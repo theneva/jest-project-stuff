@@ -101,7 +101,7 @@ Ran all test suites.
 
 If you then delete `packages/b` so `packages/*` resolves to a single project:
 
-```
+```sh-session
 $ git status
 
 …
