@@ -76,7 +76,7 @@ Ran all test suites.
 ✨  Done in 1.39s.
 ```
 
-The same issue occurs if `projects` is a wildcard:
+The same issue occurs if `projects` is defined with a wildcard. If `packages/b` is in place:
 
 ```diff
 -      "packages/a"
